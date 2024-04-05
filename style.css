@@ -1,13 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-      outline: none;
+    outline: none;
     border: none;
 }
 
 body {
-    font-family:cursive;
+    font-family: cursive;
     margin: 0;
     padding: 0;
     background-image: url(./image/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjQ0NS10YXVzLTAyYi10ZWNobm9sb2d5YmFja2dyb3VuZGlkZWFfMl8wLmpwZw.webp);
@@ -15,18 +15,19 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    
+
 }
 
-.Password{
+.Password {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .container {
     max-width: 500px;
-    padding:60px 40px;
+    padding: 60px 40px;
     height: 60vh;
     margin-top: 12rem;
     border-radius: 5px;
@@ -36,10 +37,16 @@ body {
     backdrop-filter: blur(22px);
 }
 
-.passwordImage img{
-   width: 25rem;
-   margin-top: 9rem;
-    
+.passwordImage img {
+    max-width: 100%;
+    margin-top: 9rem;
+
+}
+
+@media screen and (max-width:900px) {}
+
+.passwordImage img {
+   display: none;
 }
 
 h1 {
@@ -55,8 +62,9 @@ h1 {
 .options input[type="checkbox"] {
     margin-right: 5px;
 }
-.passwordLength{
-    font-size:1.2rem ;
+
+.passwordLength {
+    font-size: 1.2rem;
 }
 
 
@@ -70,8 +78,8 @@ button {
     border-radius: 5px;
 }
 
-input{
-    margin-left:10px;
+input {
+    margin-left: 10px;
 }
 
 button:hover {
@@ -89,10 +97,9 @@ button:hover {
 }
 
 #passwordLength {
-    width: 100%; /* عرض را به 100% تغییر دهید تا به اندازه پنجره امتداد پیدا کند */
-    height: 20px; /* ارتفاع جدید را تعیین کنید */
+    width: 100%;
+    height: 20px;
     background: linear-gradient(to right, #0074d9 0%, #0074d9 100%);
-    /* ... بقیه تغییرات بمانند ... */
 }
 
 
@@ -103,6 +110,6 @@ input[type="checkbox"]:checked, input[type="radio"]:checked {
     border: 2px solid #bcbcbc;
 }
 
-input[type="range"]{
+input[type="range"] {
     accent-color: #0074d9;
 }
