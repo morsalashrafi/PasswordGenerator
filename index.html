@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="Password">
+        <div class="passwordImage">
+            <img src="./image/log-in (1).png" alt="">
+        </div>
+
+        <div class="container">
+                <h1>Password Generator</h1>
+            <div class="options">
+                <label for="passwordLength">Password Length:</label>
+                <div>
+                    <input type="range" id="passwordLength" value="12" min="0" max="100">
+                    <span id="passwordCount"></span>
+                </div>
+                <br>
+                <label>Options:</label>
+                <input type="checkbox"  class="input" id="lowercase" checked> Lowercase
+                <input type="checkbox" class="input"  id="uppercase" checked> Uppercase
+                <input type="checkbox" class="input"  id="symbols" checked> Symbols
+                <input type="checkbox"  class="input" id="numbers" checked> Numbers
+                <input type="checkbox" class="input"  id="spaces"> Spaces</div>
+            <button id="generate">Generate Password</button>
+            <div class="result">
+                <textarea id="password" readonly></textarea>
+                <button id="copy" onclick="copyPassword()">
+                    <i class="fas fa-copy"></i> Copy
+                </button>
+            </div>
+        
+        </div>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
